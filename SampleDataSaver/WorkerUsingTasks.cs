@@ -34,21 +34,26 @@ namespace SampleDataSaver
 
         private List<Task> SaveDataInMultipleThreads()
         {
+            
             List<Task> tasks = new List<Task>();
-            for (int i = 0; i < 10; i++)
-            {
-                Task t = new Task(() =>
+            
+                for (int i = 0; i < 20; i++)
                 {
-                    using (var scope = _serviceProvider.CreateScope())
+                
+                    Task t = new Task(() =>
                     {
-                        var service = (IDataSaver)scope.ServiceProvider.GetRequiredService(typeof(IDataSaver));
-                        service.SaveData();
-                    }
-                });
-                t.Start();
-                tasks.Add(t);
-            }
+                        using (var scope = _serviceProvider.CreateScope())
+                        {
+                            var service = (IDataSaver)scope.ServiceProvider.GetRequiredService(typeof(IDataSaver));
+                            service.SaveData();
+                        }
+                    });
+                    t.Start();
+                    tasks.Add(t);
+                }
+            
             return tasks;
+                
         }
     }
 }

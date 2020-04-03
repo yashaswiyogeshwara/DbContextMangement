@@ -1,6 +1,7 @@
 ﻿
 using DAL.EF;
 using DAL.EF.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using ServiceContracts.Contracts;
 using ServiceContracts.Models;
@@ -25,8 +26,12 @@ namespace ServiceLibrary.Repository
         //public void SaveData(List<Data> dataList)
         //{
 
-        //    List<TextData> textData = dataList.ConvertAll<TextData>((data) => new TextData() { Key = data.Key,Value=data.Value});
-        //    using (var context = new DataSaverContext()) {
+        //    List<TextData> textData = dataList.ConvertAll<TextData>((data) => new TextData() { Key = data.Key, Value = data.Value });
+        //    DbContextOptionsBuilder<DataSaverContext> builder = new DbContextOptionsBuilder<DataSaverContext>();
+        //    builder.UseSqlServer("Server=YOGESHWAR\\SQLDEV;Database=Pomodoro;Trusted_Connection=true;");
+
+        //    using (var context = new DataSaverContext(builder.Options))
+        //    {
         //        context.TextData.AddRange(textData.ToArray());
         //        context.SaveChanges();
         //    }
@@ -35,7 +40,10 @@ namespace ServiceLibrary.Repository
         //public void SaveDataClone(List<Data> dataList)
         //{
         //    List<TextDataClone> textDataClone = dataList.ConvertAll<TextDataClone>((data) => new TextDataClone() { Key = data.Key, Value = data.Value });
-        //    using (var context = new DataSaverContext())
+        //    DbContextOptionsBuilder<DataSaverContext> builder = new DbContextOptionsBuilder<DataSaverContext>();
+        //    builder.UseSqlServer("Server=YOGESHWAR\\SQLDEV;Database=Pomodoro;Trusted_Connection=true;");
+
+        //    using (var context = new DataSaverContext(builder.Options))
         //    {
         //        context.TextDataClone.AddRange(textDataClone.ToArray());
         //        context.SaveChanges();
@@ -46,19 +54,19 @@ namespace ServiceLibrary.Repository
         {
 
             List<TextData> textData = dataList.ConvertAll<TextData>((data) => new TextData() { Key = data.Key, Value = data.Value });
-            
-                _context.TextData.AddRange(textData.ToArray());
-                _context.SaveChanges();
-            
+
+            _context.TextData.AddRange(textData.ToArray());
+            _context.SaveChanges();
+
         }
 
         public void SaveDataClone(List<Data> dataList)
         {
             List<TextDataClone> textDataClone = dataList.ConvertAll<TextDataClone>((data) => new TextDataClone() { Key = data.Key, Value = data.Value });
-            
-                _context.TextDataClone.AddRange(textDataClone.ToArray());
-                _context.SaveChanges();
-            
+
+            _context.TextDataClone.AddRange(textDataClone.ToArray());
+            _context.SaveChanges();
+
         }
     }
 }

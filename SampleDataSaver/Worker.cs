@@ -32,7 +32,7 @@ namespace SampleDataSaver
                 using (var scope = _serviceProvider.CreateScope())
                 {
                     var service = (IDataSaver)scope.ServiceProvider.GetRequiredService(typeof(IDataSaver));
-                    await service.SaveData();
+                    await service.SaveDataAsync();
                 }
                 _logger.LogInformation("Finshed task");
             }

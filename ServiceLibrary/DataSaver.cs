@@ -16,11 +16,11 @@ namespace ServiceLibrary
         private ILogger _logger;
         public DataSaver(IDataRepository dataRepository, ILogger<DataSaver> logger) {
             _dataRepository = dataRepository;
-            _guid = new Random().Next(100);
+            _guid = new Random().Next(1000);
             _logger = logger;
             _logger.LogInformation(string.Format("DataSaver guid is {0}",_guid.ToString()));
         }
-        public Task SaveData()
+        public Task SaveDataAsync()
         {
             Task t = Task.Run(() => {
                 _logger.LogInformation("In Data Service");
@@ -37,5 +37,23 @@ namespace ServiceLibrary
             });
             return t;
         }
+
+        public void SaveData()
+        {
+            
+                _logger.LogInformation("In Data Service");
+                List<Data> dataList = new List<Data>();
+                string[] lines = System.IO.File.ReadAllLines(@"E:\Personal_Projects\SampleDataSaver\sampleData.txt");
+                foreach (string line in lines)
+                {
+                    string[] row = line.Split(':');
+                    dataList.Add(new Data { Key = row[0], Value = row[1] });
+                }
+                _dataRepository.SaveData(dataList);
+                _dataRepository.SaveDataClone(dataList);
+                _logger.LogInformation("Finished saving data");
+            
+        }
+
     }
 }

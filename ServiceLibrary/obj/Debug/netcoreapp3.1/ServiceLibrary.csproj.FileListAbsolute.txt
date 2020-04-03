@@ -11,3 +11,16 @@ E:\Personal_Projects\ServiceLibrary\bin\Debug\netcoreapp3.1\ServiceContracts.pdb
 E:\Personal_Projects\ServiceLibrary\obj\Debug\netcoreapp3.1\ServiceLibrary.csproj.CopyComplete
 E:\Personal_Projects\ServiceLibrary\obj\Debug\netcoreapp3.1\ServiceLibrary.dll
 E:\Personal_Projects\ServiceLibrary\obj\Debug\netcoreapp3.1\ServiceLibrary.pdb
+E:\Personal_Projects\DbContextMangement\ServiceLibrary\obj\Debug\netcoreapp3.1\ServiceLibrary.csprojAssemblyReference.cache
+E:\Personal_Projects\DbContextMangement\ServiceLibrary\obj\Debug\netcoreapp3.1\ServiceLibrary.AssemblyInfoInputs.cache
+E:\Personal_Projects\DbContextMangement\ServiceLibrary\obj\Debug\netcoreapp3.1\ServiceLibrary.AssemblyInfo.cs
+E:\Personal_Projects\DbContextMangement\ServiceLibrary\obj\Debug\netcoreapp3.1\ServiceLibrary.dll
+E:\Personal_Projects\DbContextMangement\ServiceLibrary\obj\Debug\netcoreapp3.1\ServiceLibrary.pdb
+E:\Personal_Projects\DbContextMangement\ServiceLibrary\bin\Debug\netcoreapp3.1\ServiceLibrary.deps.json
+E:\Personal_Projects\DbContextMangement\ServiceLibrary\bin\Debug\netcoreapp3.1\ServiceLibrary.dll
+E:\Personal_Projects\DbContextMangement\ServiceLibrary\bin\Debug\netcoreapp3.1\ServiceLibrary.pdb
+E:\Personal_Projects\DbContextMangement\ServiceLibrary\bin\Debug\netcoreapp3.1\DAL.dll
+E:\Personal_Projects\DbContextMangement\ServiceLibrary\bin\Debug\netcoreapp3.1\ServiceContracts.dll
+E:\Personal_Projects\DbContextMangement\ServiceLibrary\bin\Debug\netcoreapp3.1\DAL.pdb
+E:\Personal_Projects\DbContextMangement\ServiceLibrary\bin\Debug\netcoreapp3.1\ServiceContracts.pdb
+E:\Personal_Projects\DbContextMangement\ServiceLibrary\obj\Debug\netcoreapp3.1\ServiceLibrary.csproj.CopyComplete

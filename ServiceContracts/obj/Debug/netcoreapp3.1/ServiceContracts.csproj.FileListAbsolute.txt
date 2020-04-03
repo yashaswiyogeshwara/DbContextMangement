@@ -6,3 +6,11 @@ E:\Personal_Projects\ServiceContracts\obj\Debug\netcoreapp3.1\ServiceContracts.A
 E:\Personal_Projects\ServiceContracts\obj\Debug\netcoreapp3.1\ServiceContracts.AssemblyInfo.cs
 E:\Personal_Projects\ServiceContracts\obj\Debug\netcoreapp3.1\ServiceContracts.dll
 E:\Personal_Projects\ServiceContracts\obj\Debug\netcoreapp3.1\ServiceContracts.pdb
+E:\Personal_Projects\DbContextMangement\ServiceContracts\bin\Debug\netcoreapp3.1\ServiceContracts.deps.json
+E:\Personal_Projects\DbContextMangement\ServiceContracts\bin\Debug\netcoreapp3.1\ServiceContracts.dll
+E:\Personal_Projects\DbContextMangement\ServiceContracts\bin\Debug\netcoreapp3.1\ServiceContracts.pdb
+E:\Personal_Projects\DbContextMangement\ServiceContracts\obj\Debug\netcoreapp3.1\ServiceContracts.AssemblyInfoInputs.cache
+E:\Personal_Projects\DbContextMangement\ServiceContracts\obj\Debug\netcoreapp3.1\ServiceContracts.AssemblyInfo.cs
+E:\Personal_Projects\DbContextMangement\ServiceContracts\obj\Debug\netcoreapp3.1\ServiceContracts.dll
+E:\Personal_Projects\DbContextMangement\ServiceContracts\obj\Debug\netcoreapp3.1\ServiceContracts.pdb
+E:\Personal_Projects\DbContextMangement\ServiceContracts\obj\Debug\netcoreapp3.1\ServiceContracts.csprojAssemblyReference.cache

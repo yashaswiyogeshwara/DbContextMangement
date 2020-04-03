@@ -8,6 +8,8 @@ namespace ServiceContracts.Contracts
 {
     public interface IDataSaver
     {
-        public Task SaveData();
+        public Task SaveDataAsync();
+
+        public void SaveData();
     }
 }
