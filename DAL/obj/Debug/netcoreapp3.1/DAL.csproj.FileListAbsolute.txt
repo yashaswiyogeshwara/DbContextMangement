@@ -1,0 +1,10 @@
+E:\Personal_Projects\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+E:\Personal_Projects\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+E:\Personal_Projects\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+E:\Personal_Projects\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+E:\Personal_Projects\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+E:\Personal_Projects\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.json
+E:\Personal_Projects\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.dev.json
+E:\Personal_Projects\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+E:\Personal_Projects\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+E:\Personal_Projects\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
