@@ -77,6 +77,166 @@
         }
       }
     },
+    "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.DI.StructureMap\\Infrastructure.DI.StructureMap.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.DI.StructureMap\\Infrastructure.DI.StructureMap.csproj",
+        "projectName": "Infrastructure.DI.StructureMap",
+        "projectPath": "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.DI.StructureMap\\Infrastructure.DI.StructureMap.csproj",
+        "packagesPath": "C:\\Users\\yogeshwaray\\.nuget\\packages\\",
+        "outputPath": "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.DI.StructureMap\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yogeshwaray\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "projectReferences": {
+              "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.Seedwork\\Infrastructure.Seedwork.csproj": {
+                "projectPath": "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.Seedwork\\Infrastructure.Seedwork.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "dependencies": {
+            "JetBrains.Annotations": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "structuremap": {
+              "target": "Package",
+              "version": "[4.6.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.Security\\Infrastructure.Security.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.Security\\Infrastructure.Security.csproj",
+        "projectName": "Infrastructure.Security",
+        "projectPath": "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.Security\\Infrastructure.Security.csproj",
+        "packagesPath": "C:\\Users\\yogeshwaray\\.nuget\\packages\\",
+        "outputPath": "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.Security\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yogeshwaray\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "dependencies": {
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.8, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.Seedwork\\Infrastructure.Seedwork.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.Seedwork\\Infrastructure.Seedwork.csproj",
+        "projectName": "Infrastructure.Seedwork",
+        "projectPath": "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.Seedwork\\Infrastructure.Seedwork.csproj",
+        "packagesPath": "C:\\Users\\yogeshwaray\\.nuget\\packages\\",
+        "outputPath": "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.Seedwork\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yogeshwaray\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "dependencies": {
+            "JetBrains.Annotations": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2019.1.3, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
+            "Remotion.Linq": {
+              "target": "Package",
+              "version": "[1.15.2, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.8, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "E:\\Personal_Projects\\DbContextMangement\\SampleDataSaver\\SampleDataSaver.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -103,6 +263,15 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.DI.StructureMap\\Infrastructure.DI.StructureMap.csproj": {
+                "projectPath": "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.DI.StructureMap\\Infrastructure.DI.StructureMap.csproj"
+              },
+              "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.Security\\Infrastructure.Security.csproj": {
+                "projectPath": "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.Security\\Infrastructure.Security.csproj"
+              },
+              "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.Seedwork\\Infrastructure.Seedwork.csproj": {
+                "projectPath": "E:\\Personal_Projects\\DbContextMangement\\infrastructure\\Infrastructure.Seedwork\\Infrastructure.Seedwork.csproj"
+              },
               "E:\\Personal_Projects\\DbContextMangement\\ServiceContracts\\ServiceContracts.csproj": {
                 "projectPath": "E:\\Personal_Projects\\DbContextMangement\\ServiceContracts\\ServiceContracts.csproj"
               },
@@ -130,6 +299,10 @@
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[3.1.0, )"
+            },
+            "structuremap": {
+              "target": "Package",
+              "version": "[4.7.1, )"
             }
           },
           "imports": [

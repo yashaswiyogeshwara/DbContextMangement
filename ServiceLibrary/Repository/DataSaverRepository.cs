@@ -7,7 +7,9 @@ using ServiceContracts.Contracts;
 using ServiceContracts.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Text;
+using System.Transactions;
 
 namespace ServiceLibrary.Repository
 {
@@ -19,39 +21,69 @@ namespace ServiceLibrary.Repository
         public DataSaverRepository(DataSaverContext context, ILogger<DataSaverRepository> logger) {
             _context = context;
             _logger = logger;
-            int num = new Random().Next();
-            _logger.LogInformation(String.Format("DataSaverRepository : , {0}", num));
+            int num = new Random().Next(1000);
+            //_logger.LogInformation(String.Format("DataSaverRepository instance : , {0}", num));
 
         }
-        //public void SaveData(List<Data> dataList)
-        //{
-
-        //    List<TextData> textData = dataList.ConvertAll<TextData>((data) => new TextData() { Key = data.Key, Value = data.Value });
-        //    DbContextOptionsBuilder<DataSaverContext> builder = new DbContextOptionsBuilder<DataSaverContext>();
-        //    builder.UseSqlServer("Server=YOGESHWAR\\SQLDEV;Database=Pomodoro;Trusted_Connection=true;");
-
-        //    using (var context = new DataSaverContext(builder.Options))
-        //    {
-        //        context.TextData.AddRange(textData.ToArray());
-        //        context.SaveChanges();
-        //    }
-        //}
-
-        //public void SaveDataClone(List<Data> dataList)
-        //{
-        //    List<TextDataClone> textDataClone = dataList.ConvertAll<TextDataClone>((data) => new TextDataClone() { Key = data.Key, Value = data.Value });
-        //    DbContextOptionsBuilder<DataSaverContext> builder = new DbContextOptionsBuilder<DataSaverContext>();
-        //    builder.UseSqlServer("Server=YOGESHWAR\\SQLDEV;Database=Pomodoro;Trusted_Connection=true;");
-
-        //    using (var context = new DataSaverContext(builder.Options))
-        //    {
-        //        context.TextDataClone.AddRange(textDataClone.ToArray());
-        //        context.SaveChanges();
-        //    }
-        //}
-
         public void SaveData(List<Data> dataList)
         {
+
+            List<TextData> textData = dataList.ConvertAll<TextData>((data) => new TextData() { Key = data.Key, Value = data.Value });
+            DbContextOptionsBuilder<DataSaverContext> builder = new DbContextOptionsBuilder<DataSaverContext>();
+            builder.UseSqlServer("Server=YOGESHWAR\\SQLDEV;Database=Pomodoro;Trusted_Connection=true;");
+
+            using (var context = new DataSaverContext(builder.Options))
+            {
+                context.TextData.AddRange(textData.ToArray());
+                context.SaveChanges();
+            }
+        }
+
+        public void SaveDataClone(List<Data> dataList)
+        {
+            List<TextDataClone> textDataClone = dataList.ConvertAll<TextDataClone>((data) => new TextDataClone() { Key = data.Key, Value = data.Value });
+            DbContextOptionsBuilder<DataSaverContext> builder = new DbContextOptionsBuilder<DataSaverContext>();
+            builder.UseSqlServer("Server=YOGESHWAR\\SQLDEV;Database=Pomodoro;Trusted_Connection=true;");
+
+            using (var context = new DataSaverContext(builder.Options))
+            {
+                context.TextDataClone.AddRange(textDataClone.ToArray());
+                context.SaveChanges();
+            }
+        }
+
+        public void SaveData(List<Data> dataList, DbTransaction txn)
+        {
+
+            List<TextData> textData = dataList.ConvertAll<TextData>((data) => new TextData() { Key = data.Key, Value = data.Value });
+            DbContextOptionsBuilder<DataSaverContext> builder = new DbContextOptionsBuilder<DataSaverContext>();
+            builder.UseSqlServer("Server=YOGESHWAR\\SQLDEV;Database=Pomodoro;Trusted_Connection=true;");
+
+            using (var context = new DataSaverContext(builder.Options))
+            {
+                context.Database.UseTransaction(txn);
+                context.TextData.AddRange(textData.ToArray());
+                context.SaveChanges();
+            }
+        }
+
+        public void SaveDataClone(List<Data> dataList, DbTransaction txn)
+        {
+            List<TextDataClone> textDataClone = dataList.ConvertAll<TextDataClone>((data) => new TextDataClone() { Key = data.Key, Value = data.Value });
+            DbContextOptionsBuilder<DataSaverContext> builder = new DbContextOptionsBuilder<DataSaverContext>();
+            builder.UseSqlServer("Server=YOGESHWAR\\SQLDEV;Database=Pomodoro;Trusted_Connection=true;");
+
+            using (var context = new DataSaverContext(builder.Options))
+            {
+                context.Database.UseTransaction(txn);
+                context.TextDataClone.AddRange(textDataClone.ToArray());
+                context.SaveChanges();
+            }
+        }
+
+        public void SaveDataUsingInjectedContext(List<Data> dataList)
+        {
+
 
             List<TextData> textData = dataList.ConvertAll<TextData>((data) => new TextData() { Key = data.Key, Value = data.Value });
 
@@ -60,7 +92,7 @@ namespace ServiceLibrary.Repository
 
         }
 
-        public void SaveDataClone(List<Data> dataList)
+        public void SaveDataCloneUsingInjectedContext(List<Data> dataList)
         {
             List<TextDataClone> textDataClone = dataList.ConvertAll<TextDataClone>((data) => new TextDataClone() { Key = data.Key, Value = data.Value });
 

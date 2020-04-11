@@ -26,15 +26,19 @@ namespace SampleDataSaver
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            while (!stoppingToken.IsCancellationRequested)
+            if (!stoppingToken.IsCancellationRequested)
             {
                 _logger.LogInformation("Created a service in scope");
-                using (var scope = _serviceProvider.CreateScope())
+                Task t = Task.Run(() =>
                 {
-                    var service = (IDataSaver)scope.ServiceProvider.GetRequiredService(typeof(IDataSaver));
-                    await service.SaveDataAsync();
-                }
-                _logger.LogInformation("Finshed task");
+                    using (var scope = _serviceProvider.CreateScope())
+                    {
+                        var service = (IDataSaver)scope.ServiceProvider.GetRequiredService(typeof(IDataSaver));
+                        service.SaveDataAsync(true);
+                    }
+                    _logger.LogInformation("Finshed task");
+                });
+                await t;
             }
         }
 

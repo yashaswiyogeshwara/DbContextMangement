@@ -8,10 +8,14 @@
     ".NETCoreApp,Version=v3.1": {
       "SampleDataSaver/1.0.0": {
         "dependencies": {
+          "Infrastructure.DI.StructureMap": "1.0.0",
+          "Infrastructure.Security": "1.0.0",
+          "Infrastructure.Seedwork": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "3.1.3",
           "Microsoft.Extensions.Hosting": "3.1.0",
           "ServiceContracts": "1.0.0",
-          "ServiceLibrary": "1.0.0"
+          "ServiceLibrary": "1.0.0",
+          "StructureMap": "4.7.1"
         },
         "runtime": {
           "SampleDataSaver.dll": {}
@@ -511,6 +515,20 @@
           }
         }
       },
+      "StructureMap/4.7.1": {
+        "dependencies": {
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
+          "System.Runtime.Loader": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/StructureMap.dll": {
+            "assemblyVersion": "4.7.0.0",
+            "fileVersion": "4.7.0.0"
+          }
+        }
+      },
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -579,7 +597,7 @@
           "System.Reflection": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -732,7 +750,7 @@
           "System.Reflection.Emit.Lightweight": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -796,12 +814,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Reflection.TypeExtensions/4.3.0": {
-        "dependencies": {
-          "System.Reflection": "4.3.0",
-          "System.Runtime": "4.3.0"
-        }
-      },
+      "System.Reflection.TypeExtensions/4.4.0": {},
       "System.Resources.ResourceManager/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -866,6 +879,13 @@
           "System.Reflection.Primitives": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Handles": "4.3.0"
+        }
+      },
+      "System.Runtime.Loader/4.3.0": {
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Runtime": "4.3.0"
         }
       },
       "System.Runtime.Serialization.Formatters/4.3.0": {
@@ -1053,7 +1073,7 @@
           "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -1071,6 +1091,21 @@
           "DAL.dll": {}
         }
       },
+      "Infrastructure.DI.StructureMap/1.0.0": {
+        "runtime": {
+          "Infrastructure.DI.StructureMap.dll": {}
+        }
+      },
+      "Infrastructure.Security/1.0.0": {
+        "runtime": {
+          "Infrastructure.Security.dll": {}
+        }
+      },
+      "Infrastructure.Seedwork/1.0.0": {
+        "runtime": {
+          "Infrastructure.Seedwork.dll": {}
+        }
+      },
       "ServiceContracts/1.0.0": {
         "runtime": {
           "ServiceContracts.dll": {}
@@ -1084,6 +1119,22 @@
         },
         "runtime": {
           "ServiceLibrary.dll": {}
+        }
+      },
+      "log4net/2.0.8.0": {
+        "runtime": {
+          "log4net.dll": {
+            "assemblyVersion": "2.0.8.0",
+            "fileVersion": "2.0.8.0"
+          }
+        }
+      },
+      "Remotion.Linq/1.15.2.0": {
+        "runtime": {
+          "Remotion.Linq.dll": {
+            "assemblyVersion": "1.15.2.0",
+            "fileVersion": "1.15.2.0"
+          }
         }
       }
     }
@@ -1416,6 +1467,13 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
+    "StructureMap/4.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ePJIef6IFpQ+WmDoH2Xr4EFrnbI1z79Z8ukt5ZhlsjKgK47giEJmqnym9BXJ91meBj1dl/7Hn6Nw1amsLFbHJA==",
+      "path": "structuremap/4.7.1",
+      "hashPath": "structuremap.4.7.1.nupkg.sha512"
+    },
     "System.Collections/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1626,12 +1684,12 @@
       "path": "system.reflection.primitives/4.3.0",
       "hashPath": "system.reflection.primitives.4.3.0.nupkg.sha512"
     },
-    "System.Reflection.TypeExtensions/4.3.0": {
+    "System.Reflection.TypeExtensions/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7u6ulLcZbyxB5Gq0nMkQttcdBTx57ibzw+4IOXEfR+sXYQoHvjW5LTLyNr8O22UIMrqYbchJQJnos4eooYzYJA==",
-      "path": "system.reflection.typeextensions/4.3.0",
-      "hashPath": "system.reflection.typeextensions.4.3.0.nupkg.sha512"
+      "sha512": "sha512-dkmh/ySlwnXJp/1qYP9uyKkCK1CXR/REFzl7abHcArxBcV91mY2CgrrzSRA5Z/X4MevJWwXsklGRdR3A7K9zbg==",
+      "path": "system.reflection.typeextensions/4.4.0",
+      "hashPath": "system.reflection.typeextensions.4.4.0.nupkg.sha512"
     },
     "System.Resources.ResourceManager/4.3.0": {
       "type": "package",
@@ -1681,6 +1739,13 @@
       "sha512": "sha512-uv1ynXqiMK8mp1GM3jDqPCFN66eJ5w5XNomaK2XD+TuCroNTLFGeZ+WCmBMcBDyTFKou3P6cR6J/QsaqDp7fGQ==",
       "path": "system.runtime.interopservices/4.3.0",
       "hashPath": "system.runtime.interopservices.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.Loader/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DHMaRn8D8YCK2GG2pw+UzNxn/OHVfaWx7OTLBD/hPegHZZgcZh3H6seWegrC4BYwsfuGrywIuT+MQs+rPqRLTQ==",
+      "path": "system.runtime.loader/4.3.0",
+      "hashPath": "system.runtime.loader.4.3.0.nupkg.sha512"
     },
     "System.Runtime.Serialization.Formatters/4.3.0": {
       "type": "package",
@@ -1827,6 +1892,21 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Infrastructure.DI.StructureMap/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infrastructure.Security/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infrastructure.Seedwork/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "ServiceContracts/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -1834,6 +1914,16 @@
     },
     "ServiceLibrary/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "log4net/2.0.8.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Remotion.Linq/1.15.2.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

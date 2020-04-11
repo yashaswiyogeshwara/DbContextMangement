@@ -25,11 +25,11 @@ namespace SampleDataSaver
         {
             if (!stoppingToken.IsCancellationRequested)
             {
-                _logger.LogInformation("Created a service in scope");
+                //_logger.LogInformation("Created a service in scope");
                 
                     Task.WaitAll(SaveDataInMultipleThreads().ToArray());
             }
-                _logger.LogInformation("Finshed task");
+                //_logger.LogInformation("Finshed task");
         }
 
         private List<Task> SaveDataInMultipleThreads()

@@ -17,3 +17,4 @@ E:\Personal_Projects\DbContextMangement\DAL\obj\Debug\netcoreapp3.1\DAL.Assembly
 E:\Personal_Projects\DbContextMangement\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
 E:\Personal_Projects\DbContextMangement\DAL\obj\Debug\netcoreapp3.1\DAL.dll
 E:\Personal_Projects\DbContextMangement\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+E:\Personal_Projects\DbContextMangement\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache

@@ -138,3 +138,13 @@ E:\Personal_Projects\DbContextMangement\SampleDataSaver\obj\Debug\netcoreapp3.1\
 E:\Personal_Projects\DbContextMangement\SampleDataSaver\obj\Debug\netcoreapp3.1\SampleDataSaver.csproj.CopyComplete
 E:\Personal_Projects\DbContextMangement\SampleDataSaver\obj\Debug\netcoreapp3.1\SampleDataSaver.dll
 E:\Personal_Projects\DbContextMangement\SampleDataSaver\obj\Debug\netcoreapp3.1\SampleDataSaver.pdb
+E:\Personal_Projects\DbContextMangement\SampleDataSaver\bin\Debug\netcoreapp3.1\Infrastructure.DI.StructureMap.dll
+E:\Personal_Projects\DbContextMangement\SampleDataSaver\bin\Debug\netcoreapp3.1\Infrastructure.Security.dll
+E:\Personal_Projects\DbContextMangement\SampleDataSaver\bin\Debug\netcoreapp3.1\Infrastructure.Seedwork.dll
+E:\Personal_Projects\DbContextMangement\SampleDataSaver\bin\Debug\netcoreapp3.1\StructureMap.dll
+E:\Personal_Projects\DbContextMangement\SampleDataSaver\bin\Debug\netcoreapp3.1\log4net.dll
+E:\Personal_Projects\DbContextMangement\SampleDataSaver\bin\Debug\netcoreapp3.1\Remotion.Linq.dll
+E:\Personal_Projects\DbContextMangement\SampleDataSaver\bin\Debug\netcoreapp3.1\Infrastructure.DI.StructureMap.pdb
+E:\Personal_Projects\DbContextMangement\SampleDataSaver\bin\Debug\netcoreapp3.1\Infrastructure.Security.pdb
+E:\Personal_Projects\DbContextMangement\SampleDataSaver\bin\Debug\netcoreapp3.1\Infrastructure.Seedwork.pdb
+E:\Personal_Projects\DbContextMangement\SampleDataSaver\bin\Debug\netcoreapp3.1\log4net.xml

@@ -10,6 +10,8 @@ namespace ServiceContracts.Contracts
     {
         public Task SaveDataAsync();
 
+        public void SaveDataAsync(bool useAdoNetTransactionScope);
+
         public void SaveData();
     }
 }
